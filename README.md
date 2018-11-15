@@ -1,5 +1,9 @@
 npm i rxjs@^6.0 rxjs-compat
 
+npm i --save firebase@5.0.3 @angular/fire@5.0.2
+
+https://fir-test-c0ff7.firebaseapp.com/
+
 # FirebaseTest
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.7.
