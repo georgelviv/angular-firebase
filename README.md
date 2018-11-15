@@ -1,4 +1,4 @@
-npm i rxjs@^6.0 rxjs-compat
+npm i --save rxjs@^6.0 rxjs-compat
 
 npm i --save firebase@5.0.3 @angular/fire@5.0.2
 
