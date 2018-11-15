@@ -1,0 +1,6 @@
+.todo-list-item--done label {
+  text-decoration: line-through;
+}
+.todo-list-item__input-wrpper {
+  align-self: center;
+}

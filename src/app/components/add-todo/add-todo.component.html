@@ -1,0 +1,27 @@
+<form
+  #myForm="ngForm" 
+  (submit)="onSubmit(myForm)" 
+  novalidate
+  autocomplete="off">
+  <div class="row justify-content-md-center">
+    <div class="col-8">
+      <div class="form-group">
+        <input
+          name="todo-name"
+          type="text" 
+          class="form-control" 
+          id="todo-name"
+          placeholder="Enter new todo" 
+          required
+          autocomplete="off"
+          [(ngModel)]="todoInput">
+      </div>
+    </div>
+    <div class="col-1">
+      <button type="submit" class="btn btn-primary" [disabled]="isSubmitDisabled">
+        Add
+      </button>
+    </div>
+  </div>
+  <hr>
+</form>

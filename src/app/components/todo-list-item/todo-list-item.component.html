@@ -1,0 +1,21 @@
+<div
+  class="todo-list-item custom-control custom-checkbox"
+  [ngClass]="{ 'todo-list-item--done': todoItem.isDone }">
+  <div class="row justify-content-md-center">
+    <div class="col-8 todo-list-item__input-wrpper">
+        <input 
+        type="checkbox"
+        class="custom-control-input"
+        [id]="todoItemId"
+        [checked]="todoItem.isDone"
+        (change)="onChange()" />
+      <label class="custom-control-label" [for]="todoItemId">{{todoItem.name}}</label>
+    </div>
+    <div class="col-1">
+      <button
+        type="button"
+        class="btn btn-danger btn-sm"
+        (click)="onDeleteClick()">Delete</button>
+    </div>
+  </div>
+</div>
